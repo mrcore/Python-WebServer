@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册登录页面</title>
+</head>
+<body>
+
+<div style="position:absolute;left:20%;top:20%;">
+    <h3 style="text-align:center">POST请求</h3>
+    <h3 style="text-align:center">登录</h3>
+    <h3 style="text-align:center">你好 {{ username }}</h3>
+    <form action="/result" method="post">
+        <div style="text-align:center">
+            <input type="text" name="username" value="" placeholder="请输入用户名">
+            <br>
+            <input type="text" name="password" value="" placeholder="请输入密码">
+            <br>
+
+            <button type="submit" style="text-align:center">登录</button>
+        </div>
+    </form>
+    <h3 style="text-align:center">{{ result }}</h3>
+</div>
+
+
+<div style="position:absolute;left:60%;top:20%;">
+    <h3 style="text-align:center">GET请求</h3>
+    <h3 style="text-align:center">登录</h3>
+    <h3 style="text-align:center">你好 {{ username }}</h3>
+    <form action="/result" method="get">
+        <div style="text-align:center">
+            <input type="text" name="username" value="" placeholder="请输入用户名">
+            <br>
+            <input type="text" name="password" value="" placeholder="请输入密码">
+            <br>
+
+            <button type="submit" style="text-align:center">登录</button>
+        </div>
+    </form>
+    <h3 style="text-align:center">{{ result }}</h3>
+</div>
+
+</body>
+</html>
